@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      background: #00a4e3;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    .swiper-wraper{
+        box-sizing: border-box;
+    }
+
+    .swiper-slide {
+
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 500px;
+      width: 250px;
+      margin-top: 100px;
+      border-radius: 5px;
+      gap: 20px;
+      padding: 10px 20px 10px 20px;
+    }
+
+    .swiper-slide img {
+      display: inline-block;
+      width: 200px;
+      height: 80px;
+      object-fit: fill;
+      align-items: center;
+      padding-top: 15px;
+      overflow: hidden;
+      
+    }
+    .swiper-slide p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #74858d;
+    font-size: 112.5%;
+    text-align: inherit;
+    
+    }
+    
+    .swiper-slide h3 {font-family: 'Roboto','Arial';
+    color: #394d57;
+    font-size: 87.5%;
+    text-shadow: none;
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: inherit;
+    letter-spacing: 2px;
+    word-spacing: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    .swiper-slide .deg{
+        font-family: 'Roboto','Arial';
+    color: #74858d;
+    font-size: 87.5%;
+    
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+
+  <div class="swiper mySwiper container">
+    <div class="swiper-wrapper">
+
+        <!-- shopify -->
+      <div class="swiper-slide">
+        <div class="img-logo">
+        <img src="./image/spfy.png" alt="">
+        </div>
+        <div>
+            <p>If there was a 10 start I’d give it. When I found Smart Slider 3 instantly knew that this was the <b>premium slider</b> I needed for all my projects.</p>
+        </div>
+        <div>
+            <img src="./image/spfy2.webp" alt="" style="height: 70px;width: 70px;">
+        </div>
+        <div>
+            <h3>JANE LINN</h3><br>
+            <p class="deg">Community Manager</p>
+        </div>
+    </div>
+    <!-- evernote -->
+      <div class="swiper-slide">
+        <div class="img-logo">
+            <img src="./image/evernote.png" alt="">
+            </div>
+            <div>
+                <p>Cannot recommend this plugin highly enough. <b>Get the Pro version</b>. Use the Slider and all your website dreams will come true.</p>
+            </div>
+            <div>
+                <img src="./image/evernote2.jpg" alt="" style="height: 70px;width: 70px;">
+            </div>
+            <div>
+                <h3>JAMES SMITH</h3><br>
+                <p class="deg">PHP Developer</p>
+            </div>
+    </div>
+
+    <!-- airbnb -->
+      <div class="swiper-slide">
+        <div class="img-logo">
+            <img src="./image/airbnb.png" alt="">
+            </div>
+            <div>
+                <p>I’ve been searching for a good free slider plugin for a long time. <b>This is definitely the one!</b> For a free plugin it does a lot of things!</p>
+            </div>
+            <div>
+                <img src="./image/airbnb2.jpeg" alt="" style="height: 70px;width: 70px;">
+            </div>
+            <div>
+                <h3>JZACK SALOMON</h3><br>
+                <p class="deg">Head Developer</p>
+            </div>
+      </div>
+
+      <!-- dropbox -->
+      <div class="swiper-slide">
+        <div class="img-logo">
+            <img src="./image/dropbox.png" alt="">
+            </div>
+            <div>
+                <p>Smart Slider 3 is <b>more than powerful</b>. It is amazing.Thanks to developer for putting so much effort to create this well-thought plugin.</p>
+            </div>
+            <div>
+                <img src="./image/dropbox2.jpg" alt="" style="height: 70px;width: 70px;">
+            </div>
+            <div>
+                <h3>DIANA MILLER</h3><br>
+                <p class="deg">Marketing Manager</p>
+            </div>
+      </div>
+
+      <!-- google -->
+      <div class="swiper-slide">
+        <div class="img-logo">
+            <img src="./image/google.png" alt="">
+            </div>
+            <div>
+                <p>The backend of the plugin is <b>beautifully designed</b> and fairly intuitive – although there are so many options, it’s almost daunting.</p>
+            </div>
+            <div>
+                <img src="./image/google2.jpg" alt="" style="height: 70px;width: 70px;">
+            </div>
+            <div>
+                <h3>RYAN VIDAL</h3><br>
+                <p class="deg">Interactive Designer</p>
+            </div>
+      </div>
+     
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination"></div>
+    
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 35,
+      freeMode: true,
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+      
+    });
+  </script>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
